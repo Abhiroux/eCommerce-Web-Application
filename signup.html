@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - My E-Commerce Site</title>
+    <!-- Bootstrap 4 CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light d-flex justify-content-center align-items-center" style="height: 100vh;">
+
+    <div class="card shadow p-4" style="max-width: 500px; width: 100%;">
+        <h3 class="text-center mb-4">Create an Account</h3>
+        <form onsubmit="return validatePassword()" method="post" action="Backend/register.php">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input name="name" type="text" class="form-control" id="fullName" placeholder="Enter your full name"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input name="email" type="email" class="form-control" id="email" placeholder="Enter your email"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input name="password" type="password" class="form-control" id="password"
+                    placeholder="Create a password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password"
+                    required>
+            </div>
+            <button type="submit" class="btn btn-block" style="background-color: #088178; color: white;">Sign
+                Up</button>
+            <p class="text-center mt-3">
+                Already have an account? <a href="login.html" style="color: #088178;">Login here</a>
+            </p>
+        </form>
+    </div>
+
+    <script>
+        function validatePassword() {
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (password !== confirmPassword) {
+                alert('Passwords do not match. Please try again.');
+                return false; // Prevents form submission
+            }
+            return true; // Allows form submission
+        }
+    </script>
+    <!-- Bootstrap 4 JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

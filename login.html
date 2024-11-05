@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - My E-Commerce Site</title>
+    <!-- Bootstrap 4 CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        button {
+            background-color: #088178 !important;
+        }
+
+        #rememberCheck,
+        #forgetPass,
+        #signUPbtn {
+            color: #088178 !important;
+        }
+    </style>
+</head>
+
+
+<body class="bg-light">
+
+    <div class="container mt-4">
+        <section id="alert" class="position-absolute w-75"></section>
+    </div>
+
+
+    <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="card shadow p-4" style="max-width: 400px; width: 100%;">
+            <h3 class="text-center mb-4">Login</h3>
+            <form method="post" action="Backend/login.php">
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input name="email" type="email" class="form-control" id="email" placeholder="Enter your email"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input name="password" type="password" class="form-control" id="password"
+                        placeholder="Enter your password" required>
+                </div>
+                <div class="form-check mb-3">
+                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                    <label class="form-check-label" for="rememberMe" id="remeberCheck">Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-success btn-block">Login</button>
+                <div class="text-center mt-3">
+                    <a href="#" class="text-primary" id="forgetPass">Forgot your password?</a>
+                </div>
+            </form>
+            <p class="text-center mt-4 mb-0">Don't have an account? <a href="signup.html" class="text-primary"
+                    id="signUPbtn">Sign
+                    up</a></p>
+        </div>
+    </div>
+
+    <!-- Bootstrap 4 JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Check if 'error' parameter exists in the URL and show alert
+        const errorMessage = getQueryParam('error');
+        if (errorMessage) {
+            // alert(errorMessage);
+            const alertBox = document.getElementById("alert");
+            alertBox.innerHTML = `
+                    <div id="alertMessage" class="alert alert-warning alert-dismissible fade show" role="alert">
+                        ${errorMessage}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>`
+            const url = new URL(window.location);
+            url.searchParams.delete('error');
+            window.history.replaceState(null, '', url);
+        }
+
+    </script>
+</body>
+
+</html>
