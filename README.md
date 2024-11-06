@@ -50,28 +50,28 @@ An e-commerce web application built with PHP, MySQL, HTML, CSS, JavaScript, and 
 ```bash
 git clone https://github.com/Abhiroux/ecommerce-application.git
 cd ecommerce-application
-
+```
 
 2. Set up the database
-Import the database.sql file to set up tables and sample data.
-Update db.php with your MySQL database credentials.
+   Import the database.sql file to set up tables and sample data.
+   Update db.php with your MySQL database credentials.
 3. Run the application
-Use a local server like XAMPP, MAMP, or WAMP and point it to this project folder.
-🖥️ Usage Guide
-Home Page: Explore the product catalog, view details, and add items to the cart.
-Cart Page: View and adjust quantities for products in the cart.
-Checkout Page: Select or add an address before placing an order.
-Orders Page: Track and view details of placed orders.
-Profile Page: Update profile information, view past orders, and change the password.
-🛠️ Technologies Used
-Frontend: HTML, CSS, JavaScript, Bootstrap
-Backend: PHP (PDO for database handling), MySQL
-📸 Screenshots
-Home Page: Displays the product catalog.
-Cart Page: Shows items in the user's cart.
-Profile Page: Allows the user to edit profile information and change password.
-Orders Page: Lists all past orders.
-Note: Add screenshots for each of these sections here to make the README more illustrative and attractive.
+   Use a local server like XAMPP, MAMP, or WAMP and point it to this project folder.
+   🖥️ Usage Guide
+   Home Page: Explore the product catalog, view details, and add items to the cart.
+   Cart Page: View and adjust quantities for products in the cart.
+   Checkout Page: Select or add an address before placing an order.
+   Orders Page: Track and view details of placed orders.
+   Profile Page: Update profile information, view past orders, and change the password.
+   🛠️ Technologies Used
+   Frontend: HTML, CSS, JavaScript, Bootstrap
+   Backend: PHP (PDO for database handling), MySQL
+   📸 Screenshots
+   Home Page: Displays the product catalog.
+   Cart Page: Shows items in the user's cart.
+   Profile Page: Allows the user to edit profile information and change password.
+   Orders Page: Lists all past orders.
+   Note: Add screenshots for each of these sections here to make the README more illustrative and attractive.
 
 🔄 Future Enhancements
 Integrate a payment gateway for secure online transactions.
@@ -83,4 +83,3 @@ This project is open-source and available under the MIT License.
 👤 Author
 Abhishek Kumar
 GitHub
-```
