@@ -63,7 +63,7 @@ if (!isset($_SESSION["loggedIn"]) || $_SESSION["loggedIn"] !== true) {
                             <?php echo $_SESSION['user_name']; ?>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                            <a class="dropdown-item" href="orders.php"><i class="fas fa-box"></i> Orders</a>
+                            <a class="dropdown-item" href="Backend/order_list.php"><i class="fas fa-box"></i> Orders</a>
                             <a class="dropdown-item" href="profile.php"><i class="fas fa-user-circle"></i> Profile</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="Backend/logout.php"><i class="fas fa-sign-out-alt"></i>

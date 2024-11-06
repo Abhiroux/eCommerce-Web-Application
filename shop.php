@@ -40,7 +40,7 @@ if (!isset($_SESSION["loggedIn"]) || $_SESSION["loggedIn"] !== true) {
                     <a class="nav-link" href="dashboard.php"><i class="fas fa-home"></i> Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#"><i class="fas fa-shopping-cart"></i> Shop</a>
+                    <a class="nav-link active" href="shop.php"><i class="fas fa-shopping-cart"></i> Shop</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"><i class="fas fa-info-circle"></i> About</a>
@@ -61,8 +61,8 @@ if (!isset($_SESSION["loggedIn"]) || $_SESSION["loggedIn"] !== true) {
                         <i class="fa-solid fa-user"></i> <?php echo $_SESSION['user_name']; ?>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                        <a class="dropdown-item" href="orders.php"><i class="fas fa-box"></i> Orders</a>
-                        <a class="dropdown-item" href="profile.php"><i class="fas fa-user-circle"></i> Profile</a>
+                        <a class="dropdown-item" href="Backend/order_list.php"><i class="fas fa-box"></i> Orders</a>
+                        <a class="dropdown-item" href="Backend/profile.php"><i class="fas fa-user-circle"></i> Profile</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="Backend/logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
                     </div>
