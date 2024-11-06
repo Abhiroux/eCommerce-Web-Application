@@ -29,7 +29,7 @@ if (!isset($_SESSION["loggedIn"]) || $_SESSION["loggedIn"] !== true) {
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="Backend/Images/logo.png" alt="" width="100px"></a>
+        <a class="navbar-brand" href="dashboard.php"><img src="Backend/Images/logo.png" alt="" width="100px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

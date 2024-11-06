@@ -1,15 +1,19 @@
 <?php
 session_start();
 
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $id = $_POST['id'];
-    $quantity = intval($_POST['quantity']);
-    
-    if (isset($_SESSION['cart'][$id])) {
-        // Update the quantity of the specified item
-        $_SESSION['cart'][$id]['quantity'] = $quantity;
+var_dump($_SESSION['cart']);
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['id'], $_POST['quantity'])) {
+    $productId = $_POST['id'];
+    $quantity = max(1, (int)$_POST['quantity']); // Ensure quantity is at least 1
+
+    // Update the cart if the product exists
+    if (isset($_SESSION['cart'][$productId])) {
+        $_SESSION['cart'][$productId]['quantity'] = $quantity;
     }
+
+    header('Location: view_cart.php');
+    exit;
 }
 
-header("Location: view_cart.php"); // Redirect back to the cart page
-exit();
+?>

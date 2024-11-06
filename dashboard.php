@@ -30,7 +30,7 @@ if (!isset($_SESSION["loggedIn"]) || $_SESSION["loggedIn"] !== true) {
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="Backend/Images/logo.png" alt="" width="100px"></a>
+        <a class="navbar-brand" href="dashboard.php"><img src="Backend/Images/logo.png" alt="" width="100px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -62,8 +62,8 @@ if (!isset($_SESSION["loggedIn"]) || $_SESSION["loggedIn"] !== true) {
                         <i class="fa-solid fa-user"></i> <?php echo $_SESSION['user_name']; ?>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                        <a class="dropdown-item" href="orders.php"><i class="fas fa-box"></i> Orders</a>
-                        <a class="dropdown-item" href="profile.php"><i class="fas fa-user-circle"></i> Profile</a>
+                        <a class="dropdown-item" href="Backend/order_list.php"><i class="fas fa-box"></i> Orders</a>
+                        <a class="dropdown-item" href="Backend/profile.php"><i class="fas fa-user-circle"></i> Profile</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="Backend/logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
                     </div>
@@ -81,7 +81,7 @@ if (!isset($_SESSION["loggedIn"]) || $_SESSION["loggedIn"] !== true) {
             <h1 class="display-2">That Matches Your</h1>
             <h1 class="display-2">Mood</h1>
             <p class="mt-1 text-dark">Save move coupons & up to 70% off</p>
-            <button class="mt-4">Shop now</button>
+            <a href="shop.php"><button class="mt-4">Shop now</button></a>
         </section>
 
         <!-- Feature section -->

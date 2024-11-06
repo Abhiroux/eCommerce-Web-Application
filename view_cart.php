@@ -22,7 +22,7 @@ if (!isset($_SESSION['cart']) || empty($_SESSION['cart'])) {
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="Backend/Images/logo.png" alt="" width="100px"></a>
+        <a class="navbar-brand" href="dashboard.php"><img src="Backend/Images/logo.png" alt="" width="100px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -110,10 +110,77 @@ if (!isset($_SESSION['cart']) || empty($_SESSION['cart'])) {
             <h4><strong>Total: Rs. <?php echo number_format($total, 2); ?></strong></h4>
         </div>
         <div class="text-center mt-4">
-            <a href="checkout.php" class="btn btn-success btn-lg">Proceed to Checkout</a>
+            <a href="Backend/checkout.php" class="btn btn-success btn-lg">Place Order</a>
         </div>
     <?php endif; ?>
 </div>
+<div id="footer" class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 footer-list-1">
+                    <img src="Backend/Images/logo.png" alt="Abhiroux Wear">
+                    <ul class="list-unstyled">
+                        <li class="list-head bold-item">Contact</li>
+                        <li class="list-item">
+                            <i class="bold-item">Address: </i>
+                            <span>Wellington Road, Street 32, San Francisco</span>
+                        </li>
+                        <li class="list-item">
+                            <i class="bold-item">Phone: </i>
+                            <span>+61 4758399388</span>
+                        </li>
+                        <li class="list-item">
+                            <i class="bold-item">Hours: </i>
+                            <span>10:00 - 18:00. Mon - Sat</span>
+                        </li>
+                        <li class="list-item">
+                            <i class="bold-item list-head">Follow Us</i>
+                            <div class="social-icons">
+                                <i class="fab fa-facebook-square"></i>
+                                <i class="fab fa-youtube"></i>
+                                <i class="fab fa-telegram"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-list-2">
+                    <ul class="list-unstyled">
+                        <li class="list-head bold-item">About</li>
+                        <li class="list-item"><a href="#">About Us</a></li>
+                        <li class="list-item"><a href="#">Delivery Information</a></li>
+                        <li class="list-item"><a href="#">Privacy Policy</a></li>
+                        <li class="list-item"><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-list-3">
+                    <ul class="list-unstyled">
+                        <li class="list-head bold-item">My Account</li>
+                        <li class="list-item"><a href="#">Sign In</a></li>
+                        <li class="list-item"><a href="#">View Cart</a></li>
+                        <li class="list-item"><a href="#">My Wishlist</a></li>
+                        <li class="list-item"><a href="#">Track My Order</a></li>
+                        <li class="list-item"><a href="#">Help</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-list-4">
+                    <ul class="list-unstyled">
+                        <li class="list-head bold-item">Install App</li>
+                        <li class="list-item">From App Store or Google Play</li>
+                        <li>
+                            <div class="app-store">
+                                <a href="#"><img src="Backend/Images/pay/app.jpg" alt="App Store"></a>
+                                <a href="#"><img src="Backend/Images/pay/play.jpg" alt="Google Play"></a>
+                            </div>
+                        </li>
+                        <li class="list-item">Secured Payment Gateways</li>
+                        <li>
+                            <img src="Backend/Images/pay/pay.png" alt="Payment Icons">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>

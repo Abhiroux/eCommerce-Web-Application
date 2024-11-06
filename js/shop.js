@@ -20,7 +20,7 @@ function fetchTshirt() {
                               <div class="card-body">
                                   <h5 class="card-title">${product.name}</h5>
                                   <p class="card-text">${product.description}</p>
-                                  <p class="card-text">Price: $${product.price}</p>
+                                  <p class="card-text">Price: Rs.${product.price}</p>
                                   <button class="add-to-cart-btn btn btn-success" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}" data-url="${product.image_url}"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>                              </div>
                           </div>
                       </div>`;
@@ -44,7 +44,7 @@ function fetchShorts() {
                               <div class="card-body">
                                   <h5 class="card-title">${product.name}</h5>
                                   <p class="card-text">${product.description}</p>
-                                  <p class="card-text">Price: $${product.price}</p>
+                                  <p class="card-text">Price: Rs.${product.price}</p>
                                   <button class="add-to-cart-btn btn btn-success" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}" data-url="${product.image_url}"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>                              </div>
                           </div>
                       </div>`;
@@ -68,7 +68,7 @@ function fetchTrousers() {
                               <div class="card-body">
                                   <h5 class="card-title">${product.name}</h5>
                                   <p class="card-text">${product.description}</p>
-                                  <p class="card-text">Price: $${product.price}</p>
+                                  <p class="card-text">Price: Rs.${product.price}</p>
                                   <button class="add-to-cart-btn btn btn-success" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}" data-url="${product.image_url}"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>                              </div>
                           </div>
                       </div>`;
@@ -92,7 +92,7 @@ function fetchJacket() {
                               <div class="card-body">
                                   <h5 class="card-title">${product.name}</h5>
                                   <p class="card-text">${product.description}</p>
-                                  <p class="card-text">Price: $${product.price}</p>
+                                  <p class="card-text">Price: Rs.${product.price}</p>
                                   <button class="add-to-cart-btn btn btn-success" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}" data-url="${product.image_url}"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>                              </div>
                           </div>
                       </div>`;
@@ -116,7 +116,7 @@ function fetchBlouse() {
                               <div class="card-body">
                                   <h5 class="card-title">${product.name}</h5>
                                   <p class="card-text">${product.description}</p>
-                                  <p class="card-text">Price: $${product.price}</p>
+                                  <p class="card-text">Price: Rs.${product.price}</p>
                                   <button class="add-to-cart-btn btn btn-success" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}" data-url="${product.image_url}"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>                              </div>
                           </div>
                       </div>`;

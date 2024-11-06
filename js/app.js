@@ -15,7 +15,7 @@ function fetchProducts() {
                             <div class="card-body">
                                 <h5 class="card-title">${product.name}</h5>
                                 <p class="card-text">${product.description}</p>
-                                <p class="card-text">Price: $${product.price}</p>
+                                <p class="card-text">Price: Rs.${product.price}</p>
                                 <button class="btn btn-success" onclick="addToCart(${product.id})"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
                             </div>
                         </div>
